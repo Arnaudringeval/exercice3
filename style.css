@@ -1,0 +1,19 @@
+p
+{
+    font-family: "KaushanScript-Regular", serif;
+color: blue;
+}
+img{
+    float: right;
+}
+@font-face {
+    font-family: "KaushanScript-Regular";
+    src: url('fonts/KaushanScript-Regular.otf');
+}
+a{
+    text-decoration: none;
+
+}
+.chaton:hover{
+color: brown;
+}

@@ -2,14 +2,39 @@
 <html>
      <head>
          <meta charset="utf-8" />
-         <link rel="stylesheet" href="style.css" />
          <title>Mon site mise en forme avec CSS</title>
-     </head>
+     </head>    
      <body>
-         <h1>Mon site Web</h1>
-         <p>Bonjour et bienvenue sur mon site !</p>
-         <img src="https://www.courrierinternational.com/sites/ci_master/files/styles/image_original_1280/public/illustrations/thumbnails/033_5800455_5c7ac69389949_0.jpg?itok=HVdksvc9" alt="chat du net">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aliquid porro, numquam id, ratione, aperiam corrupti perspiciatis nostrum vero eum neque minus. Quia tempore ratione magni nesciunt itaque. Nemo, temporibus?</p>
-        <strong><a class="chaton" href="https://fr.wikipedia.org/wiki/Chat">Pokemon</a></strong>
-        </body>
+       <h1>On peut écrire le javascript dans...</h1>
+       <ul>
+            <li>L'élement head d'un fichier html</li>
+            <li>l'élément body d'un fichier html</li>
+            <li>un fichier .js séparé</li>
+        </ul>
+
+ <form> 
+        <input type="button" value="Démarrer la machine">
+      </form>
+      <p>La machine est arrêtée.</p>
+      <script>
+        var btn = document.querySelector('input');
+        var txt = document.querySelector('p');
+        
+        btn.addEventListener('click', updateBtn);
+        
+        function updateBtn() 
+        {
+          if (btn.value === 'Démarrer la machine') {
+            btn.value = 'Arrêter la machine';
+            txt.textContent = 'La machine est démarrée !';
+          }
+          else
+           {
+            btn.value = 'Démarrer la machine';
+            txt.textContent = 'La machine est arrêtée.';
+          }
+        }
+      </script>
+       
+    </body>
 </html>

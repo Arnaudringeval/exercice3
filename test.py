@@ -58,9 +58,27 @@
 #if couleur == "verte" or poids == 15:
 #    print(couleur, poids)
 
-i = 0
-while i < 10:
-    i += 1
-    if i%2 == 0:
-        continue
-    print(i)
+#i = 0
+#while i < 10:
+#    i += 1
+#    if i%2 == 0:
+#        continue
+#    print(i)
+
+def affiche_menu():
+    print("menu:")
+    print("Action 1")
+    print("Action 2")
+
+affiche_menu()
+
+def prout(texte):
+     print('# '  + texte)
+
+prout('bonjour')
+prout('au revoir')
+
+def addition(a, b):
+    return a + b
+
+print(addition(5, 10))

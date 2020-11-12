@@ -1,40 +1,24 @@
 <!DOCTYPE html>
 <html>
      <head>
+        <link rel="stylesheet" href="style.css">
          <meta charset="utf-8" />
          <title>Mon site mise en forme avec CSS</title>
      </head>    
      <body>
-       <h1>On peut écrire le javascript dans...</h1>
-       <ul>
-            <li>L'élement head d'un fichier html</li>
-            <li>l'élément body d'un fichier html</li>
-            <li>un fichier .js séparé</li>
-        </ul>
-
- <form> 
-        <input type="button" value="Démarrer la machine">
-      </form>
-      <p>La machine est arrêtée.</p>
-      <script>
-        var btn = document.querySelector('input');
-        var txt = document.querySelector('p');
-        
-        btn.addEventListener('click', updateBtn);
-        
-        function updateBtn() 
-        {
-          if (btn.value === 'Démarrer la machine') {
-            btn.value = 'Arrêter la machine';
-            txt.textContent = 'La machine est démarrée !';
-          }
-          else
-           {
-            btn.value = 'Démarrer la machine';
-            txt.textContent = 'La machine est arrêtée.';
-          }
-        }
-      </script>
-       
+      <h1>Le beau slider</h1>
+      <div id="slider">
+          <img src="images/IMG_20200719_010106.jpg" alt="img1" id="slide">
+          <div id="precedent" onclick="ChangeSlide(-1)"> < </div>
+          <div id="suivant" onclick="ChangeSlide(1)"> > </div>
+      </div>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <p>prout</p>
+      <script src="script.js"></script>
     </body>
+    <footer id="footer">  
+      <a class="imgcontact" href="https://www.facebook.com/eurotouringseries/" target="_blank"><img id="face" src="images/facebook.png" alt="facebook"></a>
+      <a class="imgcontact" href="https://www.youtube.com/channel/UCPSYUnXRxiIHbT_WGqxSAlA" target="_blank"><img id="youtube" src="images/youtube.png" alt="youtube"></a>
+      <a class="imgcontact" href="contact.html"><img id="enveloppe" src="images/enveloppe.png" alt="nous contacter" title="nous contacter"></a>
+  </footer>
 </html>
